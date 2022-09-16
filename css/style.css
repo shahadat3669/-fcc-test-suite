@@ -1,9 +1,16 @@
 header {
+  overflow: hidden;
+  background-color: rgb(224, 224, 224);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#header-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
-
 nav ul {
   list-style: none;
   padding: 0;
@@ -24,6 +31,7 @@ a {
 }
 
 #form-section {
+  margin: 120px 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -45,9 +53,55 @@ a {
 }
 
 #video-section {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 80px 0;
+}
+#price-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-menu > h3 {
+  font-weight: 600;
+}
+
+.price-menu > ul {
+  list-style: none;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: rgb(31, 30, 30);
+  color: #fff;
+}
+
+.price-btn {
+  padding: 5px 10px;
+  margin: 10px 0;
+  background-color: lightblue;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #price-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #price-section .price-menu {
+    border-bottom: 1px solid rgb(86, 86, 86);
+  }
 }
