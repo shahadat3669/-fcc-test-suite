@@ -1,41 +1,53 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0; margin: 0;
-    float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
 }
 
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav ul .nav-link {
-    padding: 10px 20px;
-    
+  padding: 10px 20px;
+}
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 #form-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #submit {
-    padding: 5px 10px;
-    margin: 10px 0;
-    background-color: lightblue;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 5px 10px;
+  margin: 10px 0;
+  background-color: lightblue;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #submit:hover {
-    background-color: darkblue;
-    color: white;
+  background-color: darkblue;
+  color: white;
+}
+
+#video-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
